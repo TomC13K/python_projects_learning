@@ -10,6 +10,35 @@
 #Example: hacker_speak("anddigital is cool") ➞ "4ndd1g1t4l 15 c00l"
 #In order to work properly, the function should replace all “a”s with 4, “e”s with 3, “i”s with 1, “o”s with 0, and “s”s with 5.
 
+andi_dictionary = [{
+    "name": "John"
+}, {
+    "name": "James"
+}, {
+    "name": "Jack"
+}, {
+    "name": "Andy"
+}, {
+    "name": "Xander"
+}, {
+    "name": "Jill"
+}, {
+    "name": "Jenny"
+}]
+
+print(andi_dictionary)
+def get_names(data):
+    return data['name']
+
+def sorted_names(andi_list):
+    return sorted(map(get_names, andi_list))
+
+
+print(sorted_names(andi_dictionary))
+
+
+
+
 
 
 
