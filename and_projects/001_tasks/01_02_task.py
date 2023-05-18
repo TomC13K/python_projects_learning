@@ -5,3 +5,14 @@
 # phrases: “Dog” , “pet” , “music” , “Funny meme” , “Listen to this”
 
 #If it does, return "NO!" Otherwise, return "Safe watching!"
+
+list_of_words = ["Dog", "pet", "music", "Funny meme", "Listen to this"]
+
+def check_string(string):
+    return "NO!" if any(word.lower() in string.lower() for word in list_of_words) else "Safe watching!"
+
+print(check_string('this is dog'))
+print(check_string('here is nothing'))
+print(check_string('this you need to listen to this'))
+print(check_string('crappy music'))
+print(check_string('listen listen'))
