@@ -17,15 +17,22 @@ andi_dictionary = [{
     "name": "Jenny"
 }]
 
-print(andi_dictionary)
+#print(andi_dictionary)
 def get_names(data):
+    if len(data) == 0:
+        return []
     return data['name']
 
 def sorted_names(andi_list):
+    if len(andi_list) == 0:
+        return []
     return sorted(map(get_names, andi_list))
 
 
-print(sorted_names(andi_dictionary))
+#print(sorted_names(andi_dictionary))
+
+
+
 
 
 
