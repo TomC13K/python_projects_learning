@@ -24,7 +24,8 @@ second_user_data = {
 }
 
 # **second_user_data means:
-# Pass the keys and values of the second_user_data dict directly as key-value arguments, equivalent to: User(id=4, name="Mary", joined="2018-11-30")
+# Pass the keys and values of the second_user_data dict directly as key-value arguments, equivalent
+# to: User(id=4, name="Mary", joined="2018-11-30")
 my_second_user: User = User(**second_user_data)
 
 print(my_second_user.model_dump())
